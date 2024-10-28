@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.mainfragment.AccountFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary"
+            android:elevation="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_account"
+                app:civ_circle_background_color="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvFullName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Full Name"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/poppins"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+                app:layout_constraintStart_toEndOf="@+id/profile_image"
+                app:layout_constraintTop_toBottomOf="@+id/tvFullName" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#FAFAFA"
+                android:layout_marginTop="16dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Edit Profile"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonTransaction"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#FAFAFA"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Transaksi Anda"
+                android:drawableStart="@drawable/ic_history_24"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonWishlist"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#FAFAFA"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Wishlist Anda"
+                android:drawableStart="@drawable/ic_wishlist_24"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonLogout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#FAFAFA"
+                android:layout_marginTop="8dp"
+                android:drawablePadding="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Logout"
+                android:drawableStart="@drawable/ic_logout"
+                android:textAllCaps="false"
+                android:textAlignment="textStart"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

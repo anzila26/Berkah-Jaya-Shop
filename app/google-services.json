@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "151762571691",
+    "firebase_url": "https://berkah-jaya-shop-default-rtdb.firebaseio.com",
+    "project_id": "berkah-jaya-shop",
+    "storage_bucket": "berkah-jaya-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151762571691:android:fa9d024865d5a9897ac2ee",
+        "android_client_info": {
+          "package_name": "com.berkahjayashop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvJcQTPtE3zzT2pmGS0hB9yxHyXJGqCz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
